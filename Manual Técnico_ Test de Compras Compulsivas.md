@@ -1,14 +1,22 @@
 #Manual Técnico Frontend: Test de Compras compulsivas
 
-#Manual de Creación: Aplicación de Test de Compras Compulsivas
-#Esta guía detalla el proceso de construcción de una aplicación web para evaluar y proporcionar información sobre hábitos de compra, utilizando React, Tailwind CSS y la plataforma Base44.
-#Objetivo de la Aplicación: Evaluar los hábitos de compra de los usuarios mediante un test, ofrecer un análisis de riesgo de compras compulsivas, proporcionar recomendaciones personalizadas y permitir el seguimiento del historial de resultados, además de contar con un psicólogo virtual basado en IA.
-#Paso 1: Diseño de Entidades (Base de Datos)
+Manual de Creación: Aplicación de Test de Compras Compulsivas
+
+Esta guía detalla el proceso de construcción de una aplicación web para evaluar y proporcionar información sobre hábitos de compra, utilizando React, Tailwind CSS y la plataforma Base44.
+
+Objetivo de la Aplicación: Evaluar los hábitos de compra de los usuarios mediante un test, ofrecer un análisis de riesgo de compras compulsivas, proporcionar recomendaciones personalizadas y permitir el seguimiento del historial de resultados, además de contar con un psicólogo virtual basado en IA.
+
+Paso 1: Diseño de Entidades (Base de Datos)
+
 La piedra angular de la aplicación es la entidad TestResult, que almacena los resultados de cada test realizado por el usuario.
-#Entidad: TestResult.json
-#Propósito: Guardar el resultado completo de cada test.
-#Atributos clave (schema):
-#score (number): Puntuación total del test.
+
+Entidad: TestResult.json
+
+Propósito: Guardar el resultado completo de cada test.
+
+Atributos clave (schema):
+score (number): Puntuación total del test.
+
 #risk_level (string: "bajo", "moderado", "alto", "muy_alto"): Nivel de riesgo calculado.
 #personal_info (object): Información demográfica del usuario (carrera, semestre, edad, género, trabaja).
 #answers (array of objects): Detalles de cada pregunta respondida (ID de pregunta, respuesta, texto de la respuesta).
